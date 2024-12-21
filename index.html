@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body class="flex items-center justify-center min-h-screen bg-gray-900">
+    <div class="bg-gradient-to-br from-green-400 to-blue-500 p-6 rounded-3xl shadow-lg w-80 text-center text-white">
+        <div class="flex search-box items-center justify-center mb-6">
+            <input class=" p-2 px-4 inputBox rounded-l-full text-gray-700 focus:outline-none" placeholder="Enter city name"
+                type="text" />
+            <button class="bg-white p-2 pe-3 btn rounded-r-full text-gray-700">
+                <i class="fas fa-search hover:scale-110 ">
+                </i>
+            </button>
+        </div>
+        <div class="text-rose-500 hidden invalidError">
+            <p> Invalid city name</p>
+        </div>
+        <div class="hidden mainBox">
+            <div class="mb-6">
+                <img alt="Weather icon showing partly cloudy with rain" class="mx-auto weatherIcon" height="100"
+                    src="./assets/images/clouds.png"
+                    width="100" />
+            </div>
+            <div class="text-5xl font-bold mb-2 temp">
+                22°C
+            </div>
+            <div class="text-2xl mb-6 city">
+                New York
+            </div>
+            <div class="flex justify-around">
+                <div class="flex items-center">
+                    <i class="fas fa-water mr-2">
+                    </i>
+                    <div>
+                        <div class="text-lg Humidity">
+                            50%
+                        </div>
+                        <div class="text-sm">
+                            Humidity
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-wind mr-2">
+                    </i>
+                    <div>
+                        <div class="text-lg Wind-Speed">
+                            15 km/h
+                        </div>
+                        <div class="text-sm">
+                            Wind Speed
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./assets/custom.js"></script>
+</body>
+
+</html>
